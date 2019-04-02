@@ -291,8 +291,8 @@
         <tr id="surround0">
             <td style="width:100%">
                 <!--HEADING BEGINS-->
-                <div class="headingboxSucceeded">
-                    <div class="headingtext">Report on Translation: Succeeded</div>
+                <div class="headingboxFailed">
+                    <div class="headingtext">Report on Translation: Failed</div>
                     <div class="headingrubric">Produced by Inform 7 (build 6M62)</div>
                 </div>
                 <!--HEADING ENDS-->
@@ -302,17 +302,99 @@
     <!--BANNER ENDS-->
     <table border="0" cellspacing="4" cellpadding="0" width=100%>
         <tr><td align="left" valign="top" width="110"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2>
-            <img src=inform:/outcome_images/ni_succeeded@2x.png border=1 width=100 height=100>
+            <img src=inform:/outcome_images/ni_failed@2x.png border=1 width=100 height=100>
         &nbsp;&nbsp;&nbsp;&nbsp;</font></td><td align="left" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2>
         <!--HEADNOTE-->
         <p style="margin-top:0;">(Each time <b>Go</b> or <b>Replay</b> is clicked, Inform tries to translate the source text into a working story, and updates this report.)</p>
         <!--PROBLEMS BEGIN-->
-          The 697-word source text has successfully been translated into a world with 10 rooms and 7 things, and the index has been brought up to date.</p>
+          <p class="hang"><b>Problem.</b>  You wrote 'repeat with running through people' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line301"><img border=0 src=inform:/doc_images/Reveal.tif></a>: but this is a phrase which I don't recognise, possibly because it is one you meant to define but never got round to, or because the wording is wrong (see the Phrasebook section of the Index to check). Alternatively, it may be that the text immediately previous to this was a definition whose ending, normally a full stop, is missing?</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'say &quot;[person] grabs [the tool]!&quot;' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line306"><img border=0 src=inform:/doc_images/Reveal.tif></a>, but 'person' is used in a context where I'd expect to see a (single) specific example of a sayable value, not a description.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'now tool is carried by person' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line307"><img border=0 src=inform:/doc_images/Reveal.tif></a>: but the kind of something is fixed, and cannot be changed during play with a 'now'.</p>
+
+        <p class="tightin2"><a href=inform:/doc126.html><img border=0 src=inform:/doc_images/help.png></a>&nbsp;<i>See the manual: 8.11 &gt; 8.11. Now...</i></p>
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'try person shooting the player with the boomstick' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line310"><img border=0 src=inform:/doc_images/Reveal.tif></a>: but this is not an action I recognise, or else is malformed in a way I can't see how to sort out.</p>
+
+        <p class="tightin2"><a href=inform:/doc101.html><img border=0 src=inform:/doc_images/help.png></a>&nbsp;<i>See the manual: 7.4 &gt; 7.4. Try and try silently</i></p>
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc101.html><img border=0 src=inform:/doc_images/help.png></a> try (<font color="#800000">person shooting the player with the boomstick</font> - <font color="#4040ff">action</font>) <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">person shooting the player with the boomstick</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  In the sentence 'if madman carries a blade (called pigsticker)' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line311"><img border=0 src=inform:/doc_images/Reveal.tif></a>, I was expecting to read a condition, but instead found some text that I couldn't understand - 'madman carries a blade (called pigsticker)'.</p>
+
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc164.html><img border=0 src=inform:/doc_images/help.png></a> if (<font color="#800000">madman carries a blade ( called pigsticker )</font> - <font color="#E00060">a condition</font>): <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">madman carries a blade ( called pigsticker )</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'try person stabbing the player with the pigsticker' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line311"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is not an action I recognise.</p>
+
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc101.html><img border=0 src=inform:/doc_images/help.png></a> try (<font color="#800000">person stabbing the player with the pigsticker</font> - <font color="#4040ff">action</font>) <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">person stabbing the player with the pigsticker</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'change person to docile' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line314"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'change the damage taken to a random number between 20 and the maximum damage of the second noun' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line112"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'change the damage dealt to a random number between 10 and the maximum damage of the second noun' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line208"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  In the sentence 'move Poisonous Dart to inventory' &nbsp;<a href="source:story.ni#line94"><img border=0 src=inform:/doc_images/Reveal.tif></a>, I was expecting to read an object, but instead found some text that I couldn't understand - 'inventory'.</p>
+
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc122.html><img border=0 src=inform:/doc_images/help.png></a> move (<font color="#008000">poisonous dart</font> - <font color="#4040ff">object</font>) to (<font color="#800000">inventory</font> - <font color="#4040ff">object</font>) <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">I recognised:</p>
+
+          <p class="tightin3"><font color="#008000">poisonous dart</font> = <i>a projectile</i></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">inventory</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  In the sentence 'move Poisonous Dart to inventory' &nbsp;<a href="source:story.ni#line100"><img border=0 src=inform:/doc_images/Reveal.tif></a>, I was expecting to read an object, but instead found some text that I couldn't understand - 'inventory'.</p>
+
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc122.html><img border=0 src=inform:/doc_images/help.png></a> move (<font color="#008000">poisonous dart</font> - <font color="#4040ff">object</font>) to (<font color="#800000">inventory</font> - <font color="#4040ff">object</font>) <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">I recognised:</p>
+
+          <p class="tightin3"><font color="#008000">poisonous dart</font> = <i>a projectile</i></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">inventory</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'end the game in death' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line196"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'end the game in death' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line293"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  In the sentence 'if corpse is dead then ignore the can't take people's possessions rule' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line45"><img border=0 src=inform:/doc_images/Reveal.tif></a>, I was expecting to read a condition, but instead found some text that I couldn't understand - 'corpse is dead then ignore the can't take people's possessions rule'.</p>
+
+          <p class="in2">I was trying to match this phrase:</p>
+
+          <p class="tightin3"> <a href=inform:/doc164.html><img border=0 src=inform:/doc_images/help.png></a> if (<font color="#800000">corpse is dead then ignore the can't take people's possessions rule</font> - <font color="#E00060">a condition</font>): <img border=0 src=inform:/doc_images/cross.png></p>
+
+          <p class="in2">But I didn't recognise '<font color="#800000">corpse is dead then ignore the can't take people's possessions rule</font>'.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'end the game saying &quot;You have commited suicide!&quot;' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line134"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'change target to hostile' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line140"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'end the game saying &quot;You have commited suicide!&quot;' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line231"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
+          </p><hr><p class="hang"><b>Problem.</b>  You wrote 'change the target to hostile' &nbsp;<a href="source:/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x#line237"><img border=0 src=inform:/doc_images/Reveal.tif></a>: again, this is a phrase which I don't recognise.</p>
+
         <!--PROBLEMS END-->
         </font></td></tr>
     </table>
 
     <!--FOOTNOTE-->
+      <p class="in2">Problems occurring in translation prevented the game from being properly created. (Correct the source text to remove these problems and click on Go once again.)</p>
 
     <!--CONTENT ENDS-->
     </font>

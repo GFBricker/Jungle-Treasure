@@ -1,5 +1,8 @@
 "Jungle Treasure" by gbricker19
 
+[extension]
+Include Armed by David Ratliff
+
 When play begins:
 say "You have sailed from England around Cape Horn to the deep Peruvian jungle in search of ancient Incan Treasure. Your local guide points you towards an area of dense trees and tells you 'The treasure can be found in a hidden temple deep in the rainforest.' He can not lead you to it since the tribesman will attack anyone who comes close to the temple containing the treasure. You should start looking for it now so you can return before it is dark.";
 now left hand status line is "Exits: [exit list]";
@@ -70,26 +73,36 @@ Machete is a thing in the backpack.
 
 Understand "machete [something]" as cutting. 
 
+instead of taking Purple Flower:
+	if gloves is not worn:
+		end the story;
+		say "[bold type]You died from touching a poisonous flower!";
+	if gloves is worn:
+		continue the action.
 
+Purple Flower is a thing. it is in Jungle 1
 
-Purple Flower is a thing.
+Dart is a projectile. Maximum damage is 20.
+Poisonous Dart is a projectile. Maximum damage is 100.
 
-Dart is a thing. Dart can be poisonous or normal. It is normal.
 
 Blow Pipe is a thing. Blow Pipe can be loaded or unloaded. it is unloaded.
 
 Combining it with is an action applying to two carried things. Understand "Combine [something] with [something]" or "mix [something] with [something]" as Combining it with.
 
 instead of combining Dart with Purple Flower:
-	now Dart is Poisonous;
+	move Poisonous Dart to inventory;
 	move Purple flower to junk;
+	move Dart to Junk;
 	say "you coat the dart in the toxins of the flower andcreate a poisonous dart.".
 
 instead of combining Purple flower with dart:
-	now Dart is Poisonous;
+	move Poisonous Dart to inventory;
 	move Purple flower to junk;
+	move Dart to Junk;
 	say "you coat the dart in the toxins of the flower andcreate a poisonous dart.".
 
+Tribesman is a person. Tribesman is in Jungle 2.
 
 
 
