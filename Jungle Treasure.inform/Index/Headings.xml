@@ -918,46 +918,4 @@
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>131</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>1</integer>
-        <key>Title</key><string>Version 3 of Armed by David Ratliff begins here</string>
-        <key>Level</key><integer>0</integer>
-        <key>Indentation</key><integer>0</integer>
-    </dict>
-    <key>132</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>5</integer>
-        <key>Title</key><string>Section 1 - The Breath of Life</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>133</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>25</integer>
-        <key>Title</key><string>Section 2 - Rules and Kinds</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>134</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>105</integer>
-        <key>Title</key><string>Section 3 - Shooting</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>135</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>201</integer>
-        <key>Title</key><string>Section 4 - Stabbing</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>136</key><dict>
-        <key>Filename</key><string>/Users/gbricker19/Library/Inform/Extensions/david ratliff/armed.i7x</string>
-        <key>Line</key><integer>298</integer>
-        <key>Title</key><string>Section 5 - Revenge</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
 </dict></plist>

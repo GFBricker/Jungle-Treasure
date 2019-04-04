@@ -11,7 +11,7 @@ You have sailed from England around Cape Horn to the deep Peruvian jungle in sea
 
 Jungle Treasure
 An Interactive Fiction by gbricker19
-Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190403 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Dock
 Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
@@ -22,6 +22,7 @@ You can see a backpack (closed) here.
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1008"></child>
             <child nodeId="node-1007"></child>
+            <child nodeId="node-1102"></child>
             <child nodeId="node-1052"></child>
             <child nodeId="node-1003"></child>
         </children>
@@ -64,11 +65,12 @@ You put on Gloves.
     </item>
     <item nodeId="node-1052">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open the backpack, revealing Gloves and Machete.
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1053"></child>
+        <children><child nodeId="node-1097"></child>
+            <child nodeId="node-1053"></child>
         </children>
     </item>
     <item nodeId="node-1053">
@@ -123,6 +125,144 @@ You can see Purple Flower here.
     <item nodeId="node-1058">
         <command xml:space="preserve">put on gloves</command>
         <result xml:space="preserve">You put on Gloves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1097">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1098"></child>
+            <child nodeId="node-1108"></child>
+        </children>
+    </item>
+    <item nodeId="node-1108">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1109"></child>
+        </children>
+    </item>
+    <item nodeId="node-1109">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dart is already here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1110"></child>
+        </children>
+    </item>
+    <item nodeId="node-1110">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1111"></child>
+        </children>
+    </item>
+    <item nodeId="node-1111">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1112"></child>
+        </children>
+    </item>
+    <item nodeId="node-1112">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Dock
+Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
+
+You can see Dart and a backpack (in which are Gloves and Machete) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1098">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1099"></child>
+        </children>
+    </item>
+    <item nodeId="node-1099">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1100"></child>
+        </children>
+    </item>
+    <item nodeId="node-1100">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His health is 95.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your health is 90
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">open back pack</command>
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1103"></child>
+        </children>
+    </item>
+    <item nodeId="node-1103">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1104"></child>
+        </children>
+    </item>
+    <item nodeId="node-1104">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1105"></child>
+        </children>
+    </item>
+    <item nodeId="node-1105">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -449,6 +589,8 @@ Machete: Taken.
 Jungle
 All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
 
+You can see Tribesman here.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1015"></child>
@@ -514,11 +656,12 @@ You can see Purple Flower here.
     <item nodeId="node-1015">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
-Temple entrance
+The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your helath is 100
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
+        <children><child nodeId="node-1095"></child>
+            <child nodeId="node-1016"></child>
         </children>
     </item>
     <item nodeId="node-1016">
@@ -648,6 +791,14 @@ Secret Exit
         <result xml:space="preserve">
 Jungle
 All around you is the Jungle. You can make out paths to the west and north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1095">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You don't seem to have anything at the moment.
+(Health: 90)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
