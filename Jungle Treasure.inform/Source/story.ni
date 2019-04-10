@@ -37,6 +37,9 @@ Junk is a room.
 [one-way connection, not shown on top left as route]
 South of Jungle 4 is nowhere.
 
+east of temple entrance is nowhere
+
+
 [Flower Puzzle]
 
 [Backpack from Marisa's Jungle Search]
@@ -46,9 +49,7 @@ The backpack is a thing in Dock. Understand "bookbag" or "bag" or "book bag" or 
 
 Gloves is a thing in the backpack. Gloves is wearable. The description is "".
 
-Machete is a thing in the backpack. 
-
-Understand "machete [something]" as cutting. 
+Machete is a thing in the backpack. The description is "".
 
 instead of taking Purple Flower:
 	if gloves is not worn:
@@ -57,28 +58,37 @@ instead of taking Purple Flower:
 	if gloves is worn:
 		continue the action.
 
-Purple Flower is a thing. it is in Jungle 1
+Purple Flower is a thing. it is in Jungle 4.
 
-Dart is a thing. it is in the backpack. the description is "".
+dart-count is a number variable. dart-count is 5. 
 
-Poisonous Dart is a Thing. the description is "".
+Dart is a thing. The printed name is "Dart x [dart-count]". it is in the backpack.
 
-Blow Pipe is a thing. Blow Pipe can be loaded or unloaded. it is unloaded.
+PD-count is a number variable. PD-count is 1.
+
+Poisonous Dart is a Thing. The printed name is "Poisonous Dart x [PD-count]". the description is "".
+
 
 Combining it with is an action applying to two carried things. Understand "Combine [something] with [something]" or "mix [something] with [something]" as Combining it with.
 
 instead of combining Dart with Purple Flower:
-	move Poisonous Dart to player;
-	move Purple flower to junk;
-	move Dart to Junk;
-	say "you coat the dart in the toxins of the flower and create a poisonous dart.".
+	if dart-count is greater than 0:
+		move Poisonous Dart to player;
+		move Purple flower to junk;
+		decrease dart-count by 1;
+		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
+	otherwise:
+		say "You dont have any darts to make poisonous, you might want to get them out of your backpack or restart."
 
 instead of combining Purple flower with dart:
-	move Poisonous Dart to player;
-	move Purple flower to junk;
-	move Dart to Junk;
-	say "you coat the dart in the toxins of the flower andcreate a poisonous dart.".
-
+	if dart-count is greater than 0:
+		move Poisonous Dart to player;
+		move Purple flower to junk;
+		decrease dart-count by 1;
+		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
+	otherwise:
+		say "You dont have any darts to make poisonous, you might want to get them out of your backpack or restart."
+		
 Tribesman is a person. Tribesman is in Jungle 2. Present health of Tribesman is 100.
 
 
@@ -160,25 +170,28 @@ say "You don't have [the noun]." instead.
 
 [Tribesman Interaction combat related]
 instead of throwing Dart at Tribesman:
-	if the player carries dart:
+	if dart-count is 0:
+		say "You have no darts left";
+	otherwise:
 		if the player is in Jungle 2:
 			decrease present health of the Tribesman by 5;
+			decrease dart-count by 1;
 			say "You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is [the present health of the Tribesman].[line break]";
 		otherwise:
-			say "You try to throw the dartat the tribesman, but he is too far away.";
+			say "You try to throw the dart at the tribesman, but he is too far away.";
 			move dart to location;
-	otherwise:
-		say "you are not carrying a dart"	
 
-instead of throwing Dart:
-	if the player carries dart:
-		if the player is in Jungle 2:
-			decrease present health of the Tribesman by 5;
-			say "You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is [the present health of the Tribesman].[line break]";
-		otherwise:
-			say "You throw the dart at nothing in particular. It is now on the ground.";
+instead of throwing Poisonous Dart at Tribesman:
+	if PD-count is 0:
+		say "You are not carrying a poisonous dart";
 	otherwise:
-		say "you are not carrying a dart"	
+		if the player is in Jungle 2:
+			decrease present health of the Tribesman by 100;
+			decrease PD-count by 1;
+			say "You throw the poisonous dart at the Tribesman, he pulls it out of his skin as if it were a mosquito sting. After a few seconds he drops to the floor. You have killed the tribesman and have free path into the temple! [line break]";
+		otherwise:
+			say "You try to throw the poisonous dart at the tribesman, and lose the dart in the process, he is too far away.";
+			decrease PD-count by 1.
 	
 
 Instead of going east from Jungle 2:
@@ -187,5 +200,22 @@ Instead of going east from Jungle 2:
 	otherwise:
 		decrease present health of player by 10;
 		say "[line break]The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your current health is [the present health of the player].[line break]".
-		
-[Tribesman interaction everything else]
+
+instead of attacking Tribesman with machete:
+	if the player carries the machete:
+		If the player is in jungle 2:
+			decrease present health of the tribesman by 20;
+			decrease present health of the player by 40;
+			say "By hitting the tribesman with machete you have angerered him greatly your blow lands dealing 30 damage. The Tribesman's current health is [the present health of the Tribesman].[line break]
+			He swings back at you with his spear and deals 40 damage. Your current health is [the present health of the player].[line break]";
+		Otherwise:
+			say "You try to attack the tribesman with the macete but he is nowhere to be seen";
+	otherwise:
+		say "You are not carrying the machete".	
+
+	
+instead of throwing dart:
+	decrease dart-count by 1;
+	say "you randomly throw a dart and it lands in the shrubberey unable to be found again.".
+
+

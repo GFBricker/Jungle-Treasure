@@ -11,7 +11,7 @@ You have sailed from England around Cape Horn to the deep Peruvian jungle in sea
 
 Jungle Treasure
 An Interactive Fiction by gbricker19
-Release 1 / Serial number 190403 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190409 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Dock
 Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
@@ -24,8 +24,126 @@ You can see a backpack (closed) here.
             <child nodeId="node-1007"></child>
             <child nodeId="node-1102"></child>
             <child nodeId="node-1052"></child>
+            <child nodeId="node-1125"></child>
             <child nodeId="node-1003"></child>
+            <child nodeId="node-1154"></child>
         </children>
+    </item>
+    <item nodeId="node-1154">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1155"></child>
+        </children>
+    </item>
+    <item nodeId="node-1155">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart x 5.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+        </children>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+        </children>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 5
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1158"></child>
+        </children>
+    </item>
+    <item nodeId="node-1158">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1159"></child>
+        </children>
+    </item>
+    <item nodeId="node-1159">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You don't seem to have anything at the moment.
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1160"></child>
+        </children>
+    </item>
+    <item nodeId="node-1160">
+        <command xml:space="preserve">taek dart</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1161"></child>
+        </children>
+    </item>
+    <item nodeId="node-1161">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1162"></child>
+        </children>
+    </item>
+    <item nodeId="node-1162">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1163"></child>
+        </children>
+    </item>
+    <item nodeId="node-1163">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1164"></child>
+        </children>
+    </item>
+    <item nodeId="node-1164">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 95.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1165"></child>
+        </children>
+    </item>
+    <item nodeId="node-1165">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You don't seem to have anything at the moment.
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1003">
         <command xml:space="preserve">take backpack</command>
@@ -63,9 +181,120 @@ You put on Gloves.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1125">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1126"></child>
+        </children>
+    </item>
+    <item nodeId="node-1126">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't open unless openable rule" applies.]
+[Rule "can't open what's locked rule" applies.]
+[Rule "can't open what's already open rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "standard opening rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "reveal any newly visible interior rule" applies.]
+You open the backpack, revealing Gloves, Machete and Dart.
+[Rule "last specific action-processing rule" applies.]
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1127"></child>
+        </children>
+    </item>
+    <item nodeId="node-1127">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't take yourself rule" applies.]
+[Rule "can't take other people rule" applies.]
+[Rule "can't take component parts rule" applies.]
+[Rule "can't take people's possessions rule" applies.]
+[Rule "can't take items out of play rule" applies.]
+[Rule "can't take what you're inside rule" applies.]
+[Rule "can't take what's already taken rule" applies.]
+[Rule "can't take scenery rule" applies.]
+[Rule "can only take things rule" applies.]
+[Rule "can't take what's fixed in place rule" applies.]
+[Rule "use player's holdall to avoid exceeding carrying capacity rule" applies.]
+[Rule "can't exceed carrying capacity rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "standard taking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "standard report taking rule" applies.]
+Taken.
+[Rule "last specific action-processing rule" applies.]
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1128"></child>
+        </children>
+    </item>
+    <item nodeId="node-1128">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't drop yourself rule" applies.]
+[Rule "can't drop what's already dropped rule" applies.]
+[Rule "can't drop what's not held rule" applies.]
+[Rule "can't drop clothes being worn rule" applies.]
+[Rule "can't drop if this exceeds carrying capacity rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "standard dropping rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "standard report dropping rule" applies.]
+Dropped.
+[Rule "last specific action-processing rule" applies.]
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1052">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart.
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart x 5.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -136,8 +365,196 @@ You can see Purple Flower here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1098"></child>
+            <child nodeId="node-1150"></child>
             <child nodeId="node-1108"></child>
+            <child nodeId="node-1131"></child>
         </children>
+    </item>
+    <item nodeId="node-1131">
+        <command xml:space="preserve">wear gloves</command>
+        <result xml:space="preserve">(first taking Gloves)
+You put on Gloves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1132"></child>
+        </children>
+    </item>
+    <item nodeId="node-1132">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1133"></child>
+        </children>
+    </item>
+    <item nodeId="node-1133">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1134"></child>
+        </children>
+    </item>
+    <item nodeId="node-1134">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1135"></child>
+        </children>
+    </item>
+    <item nodeId="node-1135">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the east and north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1136"></child>
+        </children>
+    </item>
+    <item nodeId="node-1136">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1137"></child>
+        </children>
+    </item>
+    <item nodeId="node-1137">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1138"></child>
+        </children>
+    </item>
+    <item nodeId="node-1138">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your current health is 90.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1139"></child>
+        </children>
+    </item>
+    <item nodeId="node-1139">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1140"></child>
+        </children>
+    </item>
+    <item nodeId="node-1140">
+        <command xml:space="preserve">take purple flowere</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take Purple Flower.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1141"></child>
+        </children>
+    </item>
+    <item nodeId="node-1141">
+        <command xml:space="preserve">take purple flower</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">combine lower with dart</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1143"></child>
+        </children>
+    </item>
+    <item nodeId="node-1143">
+        <command xml:space="preserve">combine flower with dart</command>
+        <result xml:space="preserve">you coat the dart in the toxins of the flower andcreate a poisonous dart.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the poisonous dart at the Tribesman but he pulls it out of his skin as if it were a mosquito sting. But after a few seconds he drops to the floor. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Temple entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Poisonous Dart and Tribesman's dead body here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1108">
         <command xml:space="preserve">throw dart</command>
@@ -145,7 +562,8 @@ You can see Purple Flower here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1109"></child>
+        <children><child nodeId="node-1119"></child>
+            <child nodeId="node-1109"></child>
         </children>
     </item>
     <item nodeId="node-1109">
@@ -190,13 +608,111 @@ You can see Dart and a backpack (in which are Gloves and Machete) here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1098">
+    <item nodeId="node-1119">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1120"></child>
+        </children>
+    </item>
+    <item nodeId="node-1120">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Jungle
 All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
 
 You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1121"></child>
+        </children>
+    </item>
+    <item nodeId="node-1121">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1122"></child>
+        </children>
+    </item>
+    <item nodeId="node-1122">
+        <command xml:space="preserve">take dart</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1123"></child>
+        </children>
+    </item>
+    <item nodeId="node-1123">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1124"></child>
+        </children>
+    </item>
+    <item nodeId="node-1124">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1150">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 5
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1151"></child>
+        </children>
+    </item>
+    <item nodeId="node-1151">
+        <command xml:space="preserve">throw dart</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1152"></child>
+        </children>
+    </item>
+    <item nodeId="node-1152">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You don't seem to have anything at the moment.
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1153"></child>
+        </children>
+    </item>
+    <item nodeId="node-1153">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">Dart x 5: Taken.
+backpack: Taken.
+Gloves: Taken.
+Machete: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1098">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -218,12 +734,99 @@ You can see Tribesman here.
     </item>
     <item nodeId="node-1100">
         <command xml:space="preserve">throw dart at tribesman</command>
-        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His health is 95.
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 95.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1101"></child>
+            <child nodeId="node-1171"></child>
         </children>
+    </item>
+    <item nodeId="node-1171">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 4
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1172"></child>
+        </children>
+    </item>
+    <item nodeId="node-1172">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 90.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1173"></child>
+        </children>
+    </item>
+    <item nodeId="node-1173">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 85.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1174"></child>
+        </children>
+    </item>
+    <item nodeId="node-1174">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 2
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1175"></child>
+        </children>
+    </item>
+    <item nodeId="node-1175">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 2
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1176"></child>
+        </children>
+    </item>
+    <item nodeId="node-1176">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 80.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1177"></child>
+        </children>
+    </item>
+    <item nodeId="node-1177">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You throw the dart at the Tribesman but he simply pulls it out of his skin as if it were a mosquito sting. The Tribesman's health has been decreased by 5. His current health is 75.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1178"></child>
+        </children>
+    </item>
+    <item nodeId="node-1178">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Dart x 0
+(Health: 100)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+        </children>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">throw dart at tribesman</command>
+        <result xml:space="preserve">You have no darts left
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1101">
         <command xml:space="preserve">e</command>
