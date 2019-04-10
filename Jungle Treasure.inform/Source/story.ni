@@ -24,7 +24,7 @@ Jungle 3 is a room. It is south of jungle 1 and west of jungle 4. the printed na
 
 Jungle 4 is a room. It is south of jungle 2 and north of secret exit. the printed name is "Jungle". "All around you is the Jungle. You can make out paths to the west and north."
 
-Temple entrance is a room. it is east of jungle 2.
+Temple entrance is a room. it is east of jungle 2. the description is "As you Enter the temple the doorslams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to makeout buttons and a painting on one of the walls."
 
 Hallway is a room. it is southeast of Temple Entrance.
 
@@ -217,5 +217,9 @@ instead of attacking Tribesman with machete:
 instead of throwing dart:
 	decrease dart-count by 1;
 	say "you randomly throw a dart and it lands in the shrubberey unable to be found again.".
+[temple entrance puzzle]
+buttons is scenery in temple entrance. the description is "and one red button".
+Painting is scenery in temple entrance. the description is "It seems to be a key for whatever buttons you have to press from let to right there is a wave a hut, a fire, and a bird.".
 
+Meal Button is scenery in temple entrance. It can be pressed or un-pressed.
 
