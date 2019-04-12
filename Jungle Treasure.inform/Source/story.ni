@@ -24,7 +24,7 @@ Jungle 3 is a room. It is south of jungle 1 and west of jungle 4. the printed na
 
 Jungle 4 is a room. It is south of jungle 2 and north of secret exit. the printed name is "Jungle". "All around you is the Jungle. You can make out paths to the west and north."
 
-Temple entrance is a room. it is east of jungle 2. the description is "As you Enter the temple the doorslams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to makeout buttons and a painting on one of the walls."
+Temple entrance is a room. it is east of jungle 2. the description is "As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls."
 
 Hallway is a room. it is southeast of Temple Entrance.
 
@@ -37,7 +37,7 @@ Junk is a room.
 [one-way connection, not shown on top left as route]
 South of Jungle 4 is nowhere.
 
-east of temple entrance is nowhere
+west of temple entrance is nowhere
 
 
 [Flower Puzzle]
@@ -217,9 +217,106 @@ instead of attacking Tribesman with machete:
 instead of throwing dart:
 	decrease dart-count by 1;
 	say "you randomly throw a dart and it lands in the shrubberey unable to be found again.".
+
 [temple entrance puzzle]
-buttons is scenery in temple entrance. the description is "and one red button".
-Painting is scenery in temple entrance. the description is "It seems to be a key for whatever buttons you have to press from let to right there is a wave a hut, a fire, and a bird.".
 
-Meal Button is scenery in temple entrance. It can be pressed or un-pressed.
+instead of going to hallway from temple entrance:
+	if Pork button is pressed:
+		if Wind Button is pressed:
+			if storm button is pressed:
+				say "";
+				continue the action;
+			otherwise: 
+				say "There is a large stone door in the way.";
+		otherwise: 
+			say "There is a large stone door in the way.";
+	otherwise: 
+		say "There is a large stone door in the way."
+	
+buttons is scenery in temple entrance. the description is "There are six buttons on the wall a pork button, a wind button, a volcano button, a spear button, a storm button, and a red button with a looped arrow, maybe it's the reset button. To press a button say [bold type]press 'name' button.".
 
+Painting is scenery in temple entrance. the description is "It seems to be a key for whatever buttons you have to press. It depicts a crashing wave, a firepit and spit on the beach, and a bird flying in the sky".
+
+A pressy is a kind of thing. A pressy can be pressed or unpressed. It is usually unpressed.
+
+Pork Button is scenery in temple entrance. Pork Button is a pressy.
+Wind Button is scenery in temple entrance. Wind Button is a pressy.
+Volcano Button is scenery in temple entrance. Volcano Button is a pressy.
+Spear Button is scenery in temple entrance. Spear Button is a pressy.
+Storm Button is scenery in temple entrance. Storm Button is a pressy.
+Red Button is scenery in temple entrance. Red Button is a pressy.
+
+pressing is an action applying to one thing. understand "press [pressy]" and "push [pressy]" as pressing
+
+
+instead of pressing Pork Button:
+	if pork button is unpressed:
+		now the pork button is pressed;
+		say "The pork button is pressed down and remains in that position after you lift your hand off.";
+	otherwise:
+		now Pork Button is unpressed;
+		say "The pork button lifts up to the unpressed position"
+
+
+instead of pressing Wind Button:
+	if Wind button is unpressed:
+		now the wind button is pressed;
+		say "The wind button is pressed down and remains in that position after you lift your hand off.";
+	otherwise:
+		now Wind Button is unpressed;
+		say "The wind button lifts up to the unpressed position"
+
+
+instead of pressing volcano Button:
+	if volcano button is unpressed:
+		now the volcano button is pressed;
+		say "The volcano button is pressed down and remains in that position after you lift your hand off.";
+	otherwise:
+		now volcano Button is unpressed;
+		say "The volcano button lifts up to the unpressed position"
+
+
+instead of pressing spear Button:
+	if spear button is unpressed:
+		now the spear button is pressed;
+		say "The spear button is pressed down and remains in that position after you lift your hand off.";
+	otherwise:
+		now spear Button is unpressed;
+		say "The spear button lifts up to the unpressed position"
+
+
+instead of pressing Storm Button:
+	if Storm button is unpressed:
+		now the Storm button is pressed;
+		say "The storm button is pressed down and remains in that position after you lift your hand off.";
+	otherwise:
+		now storm Button is unpressed;
+		say "The storm button lifts up to the unpressed position"
+
+Instead of pressing Red Button:
+	now storm Button is unpressed;
+	now spear Button is unpressed;
+	now volcano Button is unpressed;
+	now Wind Button is unpressed;
+	now Pork Button is unpressed;
+	say "You press the red button and all of the other buttons return to their unpressed position."
+
+an every turn rule:
+	if Pork button is pressed:
+		if Wind Button is pressed:
+			if storm button is pressed:
+				say "Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple."
+
+
+Yachting is an action applying to nothing. Understand "hehe" as yachting.
+
+instead of yachting:
+	move player to temple entrance.
+	
+Sailing is an action applying to nothing. Understand "haha" as sailing.
+
+instead of sailing:
+	move player to hallway.
+
+		
+		
