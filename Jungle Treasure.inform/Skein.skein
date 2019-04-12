@@ -21,6 +21,7 @@ You can see a backpack (closed) here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1081"></child>
+            <child nodeId="node-1644"></child>
             <child nodeId="node-1378"></child>
             <child nodeId="node-1080"></child>
             <child nodeId="node-1076"></child>
@@ -885,7 +886,9 @@ As you enter the temple the door slams down behind you trapping you in a block o
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1379"></child>
+        <children><child nodeId="node-1643"></child>
+            <child nodeId="node-1389"></child>
+            <child nodeId="node-1379"></child>
         </children>
     </item>
     <item nodeId="node-1379">
@@ -954,6 +957,123 @@ As you enter the temple the door slams down behind you trapping you in a block o
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">press storm</command>
+        <result xml:space="preserve">The storm button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve">press winf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">press wind</command>
+        <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">press pork</command>
+        <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
+
+Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1640"></child>
+        </children>
+    </item>
+    <item nodeId="node-1640">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1641"></child>
+        </children>
+    </item>
+    <item nodeId="node-1641">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1643">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1644">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1645"></child>
+        </children>
+    </item>
+    <item nodeId="node-1645">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1648"></child>
+        </children>
+    </item>
+    <item nodeId="node-1648">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1649"></child>
+        </children>
+    </item>
+    <item nodeId="node-1649">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+ A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

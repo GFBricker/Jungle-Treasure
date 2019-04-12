@@ -24,7 +24,13 @@ Jungle 3 is a room. It is south of jungle 1 and west of jungle 4. the printed na
 
 Jungle 4 is a room. It is south of jungle 2 and north of secret exit. the printed name is "Jungle". "All around you is the Jungle. You can make out paths to the west and north."
 
-Temple entrance is a room. it is east of jungle 2. the description is "As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls."
+Temple entrance is a room. it is east of jungle 2. the description is "[if TE is 0]As you enter the temple the door slams down behind you trapping you in a block of rock.[end if] A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls."
+
+TE is a number variable. TE is 0.
+
+an every turn rule: 
+	if player is in temple entrance:
+		increase TE by 1.
 
 Hallway is a room. it is southeast of Temple Entrance.
 
@@ -224,7 +230,6 @@ instead of going to hallway from temple entrance:
 	if Pork button is pressed:
 		if Wind Button is pressed:
 			if storm button is pressed:
-				say "";
 				continue the action;
 			otherwise: 
 				say "There is a large stone door in the way.";
@@ -302,12 +307,45 @@ Instead of pressing Red Button:
 	say "You press the red button and all of the other buttons return to their unpressed position."
 
 an every turn rule:
-	if Pork button is pressed:
-		if Wind Button is pressed:
-			if storm button is pressed:
-				say "Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple."
+	if player is in temple entrance:
+		if TE is 0:
+			if Pork button is pressed:
+				if Wind Button is pressed:
+					if storm button is pressed:
+						say "Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple."
+
+HW is a number variable. HW is 0.
+
+An every turn rule:
+	if player is in Hallway:
+		increase HW by 1.
+
+[treasure puzzle]
+sandbag is a thing in the backpack. Sandbag can be empty or full. Sandbag is empty.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[cheats for testing]
 Yachting is an action applying to nothing. Understand "hehe" as yachting.
 
 instead of yachting:
@@ -316,7 +354,10 @@ instead of yachting:
 Sailing is an action applying to nothing. Understand "haha" as sailing.
 
 instead of sailing:
-	move player to hallway.
+	move player to hallway;
+	now pork button is pressed;
+	now wind button is pressed;
+	now storm button is pressed.
 
 		
 		
