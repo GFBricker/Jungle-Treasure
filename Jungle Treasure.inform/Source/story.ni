@@ -1,8 +1,21 @@
 "Jungle Treasure" by gbricker19
 
+instead of examining player:
+	say "An adventurer in a classic jungle exploring clothes. Your current health is [present health of player]".
+	
+After reading a command:
+	if the player’s command matches “take all”:
+		say "Hmm, if the game was that easy it wouldn't be worth playing";
+		stop the action.
 
+After reading a command:
+	if the player’s command matches “get all”:
+		say "Hmm, if the game was that easy it wouldn't be worth playing";
+		stop the action.
+				
+				
 When play begins:
-say "You have sailed from England around Cape Horn to the deep Peruvian jungle in search of ancient Incan Treasure. Your local guide points you towards an area of dense trees and tells you 'The treasure can be found in a hidden temple deep in the rainforest.' He can not lead you to it since the tribesman will attack anyone who comes close to the temple containing the treasure. You should start looking for it now so you can return before it is dark.";
+say "You have sailed from England around Cape Horn to the deep Peruvian jungle in search of ancient Incan Treasure. Your local guide points you towards an area of dense trees and tells you 'The treasure can be found in a hidden temple deep in the rainforest.' He cannot lead you to it since the tribesman will attack anyone who comes close to the temple containing the treasure. You should start looking for it now so you can return before it is dark.";
 now left hand status line is "Exits: [exit list]";
 now right hand status line is "[location]".
 To say exit list:
@@ -10,7 +23,6 @@ To say exit list:
 	repeat with way running through directions:
 		let place be the room way from the location;
 		if place is a room, say " [way] ";
-		if location is secret exit, say "".
 
 
 [rooms]
@@ -18,7 +30,7 @@ Dock is a room. "Behind you is the boat that you came here on and the rest of it
 
 Jungle 1 is a room. It is east of dock. the printed name is "Jungle". "All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.".
 
-Jungle 2 is a room. It is east of Jungle 1. the printed name is "Jungle". "All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.".
+Jungle 2 is a room. It is east of Jungle 1. the printed name is "Jungle". "All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a large tribesman, he does not look too friendly. You can make out paths to the west and south.".
 
 Jungle 3 is a room. It is south of jungle 1 and west of jungle 4. the printed name is "Jungle". "All around you is the Jungle. You can make out paths to the east and north."
 
@@ -32,16 +44,23 @@ an every turn rule:
 	if player is in temple entrance:
 		increase TE by 1.
 
-Hallway is a room. it is southeast of Temple Entrance.
+Hallway is a room. it is southeast of Temple Entrance. the description is "A fairly bare hallway with piles of sand strewn around."
 
-Treasure Vault is a room. it is southwest of Hallway.
+Treasure Vault is a room. it is southwest of Hallway. the description is "A decorated vault with a Golden Totem on a pedestal in the middle of the room. This is just the type of treasure you have been looking for!"
 
-Secret Exit is a room. it is west of Treasure vault.
+Secret Exit is a room. it is west of Treasure vault. the description is "A room overhanging the jungle outside the temple, once you exit the temple you will not be able to return. Make sure you have everything you could want before leaving."
 
 Junk is a room.
 
 [one-way connection, not shown on top left as route]
 South of Jungle 4 is nowhere.
+
+instead of going east from Jungle 2:
+	if TE is 0:
+		continue the action;
+	otherwise:
+		say "The door came down behind you when you entered and continues to block the entrance to the temple."
+
 
 west of temple entrance is nowhere
 
@@ -49,13 +68,11 @@ west of temple entrance is nowhere
 [Flower Puzzle]
 
 [Backpack from Marisa's Jungle Search]
-The backpack is a thing in Dock. Understand "bookbag" or "bag" or "book bag" or "pack" or "back pack" as backpack. It is wearable. It is a container. It is closed and openable. The description is "Your backpack is 
+The backpack is a thing in Dock. Understand "bookbag" or "bag" or "book bag" or "pack" or "back pack" as backpack. It is wearable. It is a container. It is closed and openable. The description is "Your backpack is a small hiking backpack intended for single day trips.[line break]It is [if the backpack is open]open[otherwise]closed[end if]."
 
-[line break]It is [if the backpack is open]open[otherwise]closed[end if]."
+Gloves is a thing in the backpack. Gloves is wearable. The description is "Thick wool gloves that will protect you from any outside harm."
 
-Gloves is a thing in the backpack. Gloves is wearable. The description is "".
-
-Machete is a thing in the backpack. The description is "".
+Machete is a thing in the backpack. The description is "A large 12 inch knife intended for cutting through brush, could be used in combat.".
 
 instead of taking Purple Flower:
 	if gloves is not worn:
@@ -64,15 +81,15 @@ instead of taking Purple Flower:
 	if gloves is worn:
 		continue the action.
 
-Purple Flower is a thing. it is in Jungle 4.
+Purple Flower is a thing. it is in Jungle 4. the description is "A small Purple flower that smells horrible."
 
 dart-count is a number variable. dart-count is 5. 
 
-Dart is a thing. The printed name is "Dart x [dart-count]". it is in the backpack.
+Dart is a thing. The printed name is "Dart x [dart-count]". it is in the backpack. The description is "A small throwing dart that can be used as a weapon. Maybe try [bold type]combining[roman type] with a certain substance.".
 
 PD-count is a number variable. PD-count is 1.
 
-Poisonous Dart is a Thing. The printed name is "Poisonous Dart x [PD-count]". the description is "".
+Poisonous Dart is a Thing. The printed name is "Poisonous Dart x [PD-count]". the description is "A small throwing dart coated in poisonous juices that can be used as a weapon.".
 
 
 Combining it with is an action applying to two carried things. Understand "Combine [something] with [something]" or "mix [something] with [something]" as Combining it with.
@@ -84,7 +101,7 @@ instead of combining Dart with Purple Flower:
 		decrease dart-count by 1;
 		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
 	otherwise:
-		say "You dont have any darts to make poisonous, you might want to get them out of your backpack or restart."
+		say "You don[apostophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
 
 instead of combining Purple flower with dart:
 	if dart-count is greater than 0:
@@ -93,12 +110,12 @@ instead of combining Purple flower with dart:
 		decrease dart-count by 1;
 		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
 	otherwise:
-		say "You dont have any darts to make poisonous, you might want to get them out of your backpack or restart."
+		say "You don[apostophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
 		
-Tribesman is a person. Tribesman is in Jungle 2. Present health of Tribesman is 100.
+Tribesman is a person. Tribesman is in Jungle 2. Present health of Tribesman is 100. The description is "A very large intimidating local man with a spear and many tribal tattoos covering his body."
 
 
-[Combat with help from BL's Assasin]
+[Combat with help from BL's Assassin]
 
 present health of player is 100
 
@@ -212,17 +229,17 @@ instead of attacking Tribesman with machete:
 		If the player is in jungle 2:
 			decrease present health of the tribesman by 20;
 			decrease present health of the player by 40;
-			say "By hitting the tribesman with machete you have angerered him greatly your blow lands dealing 30 damage. The Tribesman's current health is [the present health of the Tribesman].[line break]
+			say "By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is [the present health of the Tribesman].[line break]
 			He swings back at you with his spear and deals 40 damage. Your current health is [the present health of the player].[line break]";
 		Otherwise:
-			say "You try to attack the tribesman with the macete but he is nowhere to be seen";
+			say "You try to attack the tribesman with the machete but he is nowhere to be seen";
 	otherwise:
 		say "You are not carrying the machete".	
 
 	
 instead of throwing dart:
 	decrease dart-count by 1;
-	say "you randomly throw a dart and it lands in the shrubberey unable to be found again.".
+	say "you randomly throw a dart and it lands in the shrubbery unable to be found again.".
 
 [temple entrance puzzle]
 
@@ -308,7 +325,7 @@ Instead of pressing Red Button:
 
 an every turn rule:
 	if player is in temple entrance:
-		if TE is 0:
+		if HW is 0:
 			if Pork button is pressed:
 				if Wind Button is pressed:
 					if storm button is pressed:
@@ -321,22 +338,86 @@ An every turn rule:
 		increase HW by 1.
 
 [treasure puzzle]
-sandbag is a thing in the backpack. Sandbag can be empty or full. Sandbag is empty.
+sandbag is a thing in the backpack. Sandbag can be empty or full. Sandbag is empty. the printed name is "Sandbag([if sandbag is full]full[end if][if sandbag is empty]empty[end if])". the description is "[if sandbag is full]A bag full of sand.[end if][if sandbag is empty] An empty bag made for carrying sand.[end if]"
+
+filling it with is an action applying to two things. Understand "fill [something] with [something]" and "pour [something] into [something]" and "dump [something] into [something]" and "put [something] in/into [something]" as filling it with.
+
+switching it with is an action applying to two things. Understand "switch [something] with [something]" and "swap [something] with [something]" and "replace [something] with [something]" as switching it with.
+
+instead of filling sandbag with sand:
+	if player is in hallway:
+		if sandbag is empty:
+			now sandbag is full;
+			say "You take the sand from the hallway floor and stuff it into the bag, now the bag is full";
+		otherwise:
+			say "The sandbag is already full";
+	otherwise:
+		say "There is no sand nearby to fill the bag with".
 
 
+instead of switching totem with sandbag:
+	if player is in Treasure vault:
+		if sandbag is full:
+			move totem to player;
+			say "You switch the Sandbag with the Totem and nothing happens, you should get out of here before any other crazy things happen";
+		otherwise:
+			end the story;	
+			say "You switched the empty sandbag for the totem but the empty sandbag was not nearly close to the same weight as the totem and the pedestal began to rise to the ceiling until the floor from underneath you dropped out and you plummeted to your presumed death.";
+	Otherwise:
+		say "You cannot see any totem"
 
+instead of switching sandbag with totem:
+	if player is in Treasure vault:
+		if sandbag is full:
+			move totem to player;
+			say "You switch the Sandbag with the Totem and nothing happens, you should get out of here before any other crazy things happen";
+		otherwise:
+			end the story;	
+			say "You switched the empty sandbag for the totem but the empty sandbag was not nearly close to the same weight as the totem and the pedestal began to rise to the ceiling until the floor from underneath you dropped out and you plummeted to your presumed death.";	
+	Otherwise:
+		say "You cannot see any totem"
 
+instead of taking Totem:
+	say "The pedestal begins to rise to the ceiling until the floor from underneath you drops out and you plummet to your presumed death.";
+	end the story.	
 
+sand is scenery in Hallway. The description is "Coarse sand laying on the side off the hallway.".
 
+Gold Totem is a thing. Gold totem is in Treasure Vault. The description is "A beautiful jeweled gold totem of a llama. Most likely worth thousands of pounds.".
 
+		
+An every turn rule:
+	If player is in Dock:
+		If player has Gold Totem:
+			End the story finally;
+			say "You bring the totem back to the dock knowing that when you return to England your escapades will be greatly rewarded."
 
+[HOW TO WIN
 
-
-
-
-
-
-
+take backpack
+open backpack
+wear gloves
+e
+e
+s
+take purple flower
+combine flower with dart
+n
+throw dart at tribesman
+e
+press storm
+press wind
+press pork
+se
+fill sandbag with sand
+sw
+switch totem with sandbag
+w
+n
+n
+w
+w
+WIN!]
 
 
 
@@ -349,8 +430,8 @@ sandbag is a thing in the backpack. Sandbag can be empty or full. Sandbag is emp
 Yachting is an action applying to nothing. Understand "hehe" as yachting.
 
 instead of yachting:
-	move player to temple entrance.
-	
+	move player to temple entrance;	
+
 Sailing is an action applying to nothing. Understand "haha" as sailing.
 
 instead of sailing:
@@ -358,6 +439,9 @@ instead of sailing:
 	now pork button is pressed;
 	now wind button is pressed;
 	now storm button is pressed.
+	
+
+
 
 		
 		

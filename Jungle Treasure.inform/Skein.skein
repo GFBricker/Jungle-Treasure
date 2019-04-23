@@ -11,7 +11,7 @@ You have sailed from England around Cape Horn to the deep Peruvian jungle in sea
 
 Jungle Treasure
 An Interactive Fiction by gbricker19
-Release 1 / Serial number 190411 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190422 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Dock
 Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
@@ -20,13 +20,14 @@ You can see a backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1081"></child>
-            <child nodeId="node-1644"></child>
-            <child nodeId="node-1378"></child>
+        <children><child nodeId="node-1102"></child>
+            <child nodeId="node-1098"></child>
+            <child nodeId="node-1081"></child>
             <child nodeId="node-1080"></child>
             <child nodeId="node-1076"></child>
             <child nodeId="node-1023"></child>
             <child nodeId="node-1019"></child>
+            <child nodeId="node-1464"></child>
             <child nodeId="node-1015"></child>
             <child nodeId="node-1003"></child>
         </children>
@@ -153,7 +154,8 @@ You can see Tribesman here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
+        <children><child nodeId="node-1466"></child>
+            <child nodeId="node-1016"></child>
         </children>
     </item>
     <item nodeId="node-1016">
@@ -180,6 +182,158 @@ You can see Tribesman here.
         <result xml:space="preserve">(first taking Gloves)
 You put on Gloves.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1466">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1467"></child>
+        </children>
+    </item>
+    <item nodeId="node-1467">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1468"></child>
+        </children>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1469"></child>
+        </children>
+    </item>
+    <item nodeId="node-1469">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1470"></child>
+        </children>
+    </item>
+    <item nodeId="node-1470">
+        <command xml:space="preserve">fill sandbag with sand</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1471"></child>
+        </children>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve">pour sand into sandbag</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1472"></child>
+        </children>
+    </item>
+    <item nodeId="node-1472">
+        <command xml:space="preserve">put sand in sandbag</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1473"></child>
+        </children>
+    </item>
+    <item nodeId="node-1473">
+        <command xml:space="preserve">open sandbag</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1474"></child>
+        </children>
+    </item>
+    <item nodeId="node-1474">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete, Dart x 5 and sandbag.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1475"></child>
+        </children>
+    </item>
+    <item nodeId="node-1475">
+        <command xml:space="preserve">take sandbag</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1476"></child>
+        </children>
+    </item>
+    <item nodeId="node-1476">
+        <command xml:space="preserve">fill sandbag with sand</command>
+        <result xml:space="preserve">You take the sand from the hallway floor and stuff it into the bag, now the bag is full
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1477"></child>
+        </children>
+    </item>
+    <item nodeId="node-1477">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hallway
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1478"></child>
+        </children>
+    </item>
+    <item nodeId="node-1478">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hallway
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1479"></child>
+        </children>
+    </item>
+    <item nodeId="node-1479">
+        <command xml:space="preserve">fill sandbag with sand</command>
+        <result xml:space="preserve">You take the sand from the hallway floor and stuff it into the bag, now the bag is full
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1480"></child>
+        </children>
+    </item>
+    <item nodeId="node-1480">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1481"></child>
+        </children>
+    </item>
+    <item nodeId="node-1481">
+        <command xml:space="preserve">switch totem with sandbag</command>
+        <result xml:space="preserve">
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1464">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">Hmm if the game was that easy it wouldn't be worth playing
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
@@ -296,13 +450,136 @@ Dropped.
     </item>
     <item nodeId="node-1023">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete and Dart x 5.
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete, Dart x 5 and sandbag.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1030"></child>
             <child nodeId="node-1024"></child>
+            <child nodeId="node-1508"></child>
         </children>
+    </item>
+    <item nodeId="node-1508">
+        <command xml:space="preserve">take sandbag</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1509"></child>
+        </children>
+    </item>
+    <item nodeId="node-1509">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+A fairly bare hallway with piles of sand strewn around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1510"></child>
+            <child nodeId="node-1520"></child>
+        </children>
+    </item>
+    <item nodeId="node-1520">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+A decorated vault with a Golden Totem on a pedestal in the middle of the room. This is just the type of treasure you have been looking for!
+
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1521"></child>
+        </children>
+    </item>
+    <item nodeId="node-1521">
+        <command xml:space="preserve">switch sandbag with totem</command>
+        <result xml:space="preserve">You switched the empty sandbag for the totem but the empty sandbag was not nearly close to the same weight as the totem and the pedestal began to rise to the ceiling until the floor from underneath you dropped out and you plummeted to your presumed death.
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1510">
+        <command xml:space="preserve">fill snadbag with sand</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1511"></child>
+        </children>
+    </item>
+    <item nodeId="node-1511">
+        <command xml:space="preserve">fill sandbag with sand</command>
+        <result xml:space="preserve">You take the sand from the hallway floor and stuff it into the bag, now the bag is full
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1512"></child>
+        </children>
+    </item>
+    <item nodeId="node-1512">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+A decorated vault with a Golden Totem on a pedestal in the middle of the room. This is just the type of treasure you have been looking for!
+
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1513"></child>
+        </children>
+    </item>
+    <item nodeId="node-1513">
+        <command xml:space="preserve">take totem</command>
+        <result xml:space="preserve">The pedestal begins to rise to the ceiling until the floor from underneath you drops out and you plummet to your presumed death.
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1514"></child>
+        </children>
+    </item>
+    <item nodeId="node-1514">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Treasure Vault
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1515"></child>
+        </children>
+    </item>
+    <item nodeId="node-1515">
+        <command xml:space="preserve">switch sandbag with totem</command>
+        <result xml:space="preserve">You switch the Sandbag with the Totem and nothing happens, you should get out of here before any other crazy things happen
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1516"></child>
+        </children>
+    </item>
+    <item nodeId="node-1516">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+secret exit
+A room overhanging the jungle outside the temple, once you exit the temple you will not be able to return. Make sure you have everything you could want beore leaving.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1024">
         <command xml:space="preserve">take gloves</command>
@@ -879,81 +1156,82 @@ The Tribesman blocks your way into the Temple, as you try to move past he pushes
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1378">
+    <item nodeId="node-1081">
         <command xml:space="preserve">hehe</command>
         <result xml:space="preserve">Temple entrance
 As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1643"></child>
-            <child nodeId="node-1389"></child>
-            <child nodeId="node-1379"></child>
+        <children><child nodeId="node-1097"></child>
+            <child nodeId="node-1491"></child>
+            <child nodeId="node-1090"></child>
+            <child nodeId="node-1082"></child>
         </children>
     </item>
-    <item nodeId="node-1379">
+    <item nodeId="node-1082">
         <command xml:space="preserve">x painting</command>
         <result xml:space="preserve">It seems to be a key for whatever buttons you have to press in the painting it depicts a crashing wave, a firepit and spit on the beach, and a bird flying in the sky
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1380"></child>
+        <children><child nodeId="node-1083"></child>
         </children>
     </item>
-    <item nodeId="node-1380">
+    <item nodeId="node-1083">
         <command xml:space="preserve">x buttons</command>
         <result xml:space="preserve">There are five buttons on the wall a pork button, a wind button, a volcano button, a spear button, a storm button, and a red button with a looped arrow, maybe it's the reset button. To press a button say press "name" button.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1381"></child>
+        <children><child nodeId="node-1084"></child>
         </children>
     </item>
-    <item nodeId="node-1381">
+    <item nodeId="node-1084">
         <command xml:space="preserve">press storm button</command>
         <result xml:space="preserve">The storm button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1382"></child>
+        <children><child nodeId="node-1085"></child>
         </children>
     </item>
-    <item nodeId="node-1382">
+    <item nodeId="node-1085">
         <command xml:space="preserve">press wind button</command>
         <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1383"></child>
+        <children><child nodeId="node-1086"></child>
         </children>
     </item>
-    <item nodeId="node-1383">
+    <item nodeId="node-1086">
         <command xml:space="preserve">press volcano</command>
         <result xml:space="preserve">The volcano button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1384"></child>
+        <children><child nodeId="node-1087"></child>
         </children>
     </item>
-    <item nodeId="node-1384">
+    <item nodeId="node-1087">
         <command xml:space="preserve">press volcano</command>
         <result xml:space="preserve">The volcano button lifts up to the unpressed position
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1385"></child>
+        <children><child nodeId="node-1088"></child>
         </children>
     </item>
-    <item nodeId="node-1385">
+    <item nodeId="node-1088">
         <command xml:space="preserve">press pork</command>
         <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1386"></child>
+        <children><child nodeId="node-1089"></child>
         </children>
     </item>
-    <item nodeId="node-1386">
+    <item nodeId="node-1089">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Hallway
@@ -961,34 +1239,35 @@ Hallway
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1389">
+    <item nodeId="node-1090">
         <command xml:space="preserve">press storm</command>
         <result xml:space="preserve">The storm button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1390"></child>
+        <children><child nodeId="node-1499"></child>
+            <child nodeId="node-1091"></child>
         </children>
     </item>
-    <item nodeId="node-1390">
+    <item nodeId="node-1091">
         <command xml:space="preserve">press winf</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1391"></child>
+        <children><child nodeId="node-1092"></child>
         </children>
     </item>
-    <item nodeId="node-1391">
+    <item nodeId="node-1092">
         <command xml:space="preserve">press wind</command>
         <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1392"></child>
+        <children><child nodeId="node-1093"></child>
         </children>
     </item>
-    <item nodeId="node-1392">
+    <item nodeId="node-1093">
         <command xml:space="preserve">press pork</command>
         <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
 
@@ -996,10 +1275,10 @@ Suddenly the room begins to shake and a large stone door to your southeast begin
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1393"></child>
+        <children><child nodeId="node-1094"></child>
         </children>
     </item>
-    <item nodeId="node-1393">
+    <item nodeId="node-1094">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Hallway
@@ -1007,10 +1286,10 @@ Suddenly the room begins to shake and a large stone door to your southeast begin
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1640"></child>
+        <children><child nodeId="node-1095"></child>
         </children>
     </item>
-    <item nodeId="node-1640">
+    <item nodeId="node-1095">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">
 Temple entrance
@@ -1020,10 +1299,10 @@ Suddenly the room begins to shake and a large stone door to your southeast begin
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1641"></child>
+        <children><child nodeId="node-1096"></child>
         </children>
     </item>
-    <item nodeId="node-1641">
+    <item nodeId="node-1096">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Hallway
@@ -1032,44 +1311,115 @@ Suddenly the room begins to shake and a large stone door to your southeast begin
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1643">
-        <command xml:space="preserve">haha</command>
-        <result xml:space="preserve">Hallway
+    <item nodeId="node-1499">
+        <command xml:space="preserve">press pork</command>
+        <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1644">
-        <command xml:space="preserve">haha</command>
-        <result xml:space="preserve">Hallway
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1645"></child>
+        <children><child nodeId="node-1500"></child>
         </children>
     </item>
-    <item nodeId="node-1645">
-        <command xml:space="preserve">nw</command>
-        <result xml:space="preserve">
-Temple entrance
-As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+    <item nodeId="node-1500">
+        <command xml:space="preserve">press wind</command>
+        <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
+
+Suddenly the room begins to shake and a large stone door to your southeast begins to move out of the way revealing a hallway deeper into the temple.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1648"></child>
+        <children><child nodeId="node-1501"></child>
         </children>
     </item>
-    <item nodeId="node-1648">
+    <item nodeId="node-1501">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Hallway
+A fairly bare hallway with piles of sand strewn around.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1649"></child>
+        <children><child nodeId="node-1502"></child>
         </children>
     </item>
-    <item nodeId="node-1649">
+    <item nodeId="node-1502">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+A decorated vault with a Golden Totem on a pedestal in the middle of the room. This is just the type of treasure you have been looking for!
+
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1503"></child>
+        </children>
+    </item>
+    <item nodeId="node-1503">
+        <command xml:space="preserve">take totem</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1504"></child>
+        </children>
+    </item>
+    <item nodeId="node-1504">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Treasure Vault
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1491">
+        <command xml:space="preserve">press pork</command>
+        <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1492"></child>
+        </children>
+    </item>
+    <item nodeId="node-1492">
+        <command xml:space="preserve">press wind</command>
+        <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1493"></child>
+        </children>
+    </item>
+    <item nodeId="node-1493">
+        <command xml:space="preserve">press storm</command>
+        <result xml:space="preserve">The storm button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1494"></child>
+        </children>
+    </item>
+    <item nodeId="node-1494">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1495"></child>
+        </children>
+    </item>
+    <item nodeId="node-1495">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+A fairly bare hallway with piles of sand strewn around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1496"></child>
+        </children>
+    </item>
+    <item nodeId="node-1496">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">
 Temple entrance
@@ -1078,22 +1428,225 @@ Temple entrance
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1081">
-        <command xml:space="preserve">e</command>
+    <item nodeId="node-1097">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+secret exit
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1414"></child>
+        </children>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Jungle
-All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+All around you is the Jungle. You can make out paths to the west and north.
 
 You can see Purple Flower here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1109"></child>
-            <child nodeId="node-1092"></child>
-            <child nodeId="node-1082"></child>
+        <children><child nodeId="node-1415"></child>
         </children>
     </item>
-    <item nodeId="node-1082">
+    <item nodeId="node-1415">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1416"></child>
+        </children>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1417"></child>
+        </children>
+    </item>
+    <item nodeId="node-1417">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1418"></child>
+        </children>
+    </item>
+    <item nodeId="node-1418">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1419"></child>
+        </children>
+    </item>
+    <item nodeId="node-1419">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1462"></child>
+            <child nodeId="node-1420"></child>
+            <child nodeId="node-1450"></child>
+        </children>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1451"></child>
+        </children>
+    </item>
+    <item nodeId="node-1451">
+        <command xml:space="preserve">increase TE by 1</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1421"></child>
+        </children>
+    </item>
+    <item nodeId="node-1421">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+You can't go that way.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "an every turn rule" applies.]
+[Rule "an every turn rule" applies.]
+[Rule "An every turn rule" applies.]
+[Rule "An every turn rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1462">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1463"></child>
+        </children>
+    </item>
+    <item nodeId="node-1463">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The door came down behind you when you entered and continues to block the entrance to the temple.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1098">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+A fairly bare hallway with piles of sand strewn around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1099"></child>
+        </children>
+    </item>
+    <item nodeId="node-1099">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1100"></child>
+        </children>
+    </item>
+    <item nodeId="node-1100">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+ A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1130"></child>
+            <child nodeId="node-1483"></child>
+            <child nodeId="node-1113"></child>
+            <child nodeId="node-1103"></child>
+        </children>
+    </item>
+    <item nodeId="node-1103">
         <command xml:space="preserve">take flower</command>
         <result xml:space="preserve">You died from touching a poisonous flower!
 
@@ -1107,10 +1660,10 @@ You can see Purple Flower here.
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1083"></child>
+        <children><child nodeId="node-1104"></child>
         </children>
     </item>
-    <item nodeId="node-1083">
+    <item nodeId="node-1104">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">
 
@@ -1128,37 +1681,37 @@ You can see a backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1084"></child>
+        <children><child nodeId="node-1105"></child>
         </children>
     </item>
-    <item nodeId="node-1084">
+    <item nodeId="node-1105">
         <command xml:space="preserve">open backpack</command>
         <result xml:space="preserve">You open the backpack, revealing Gloves and Machete.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1085"></child>
+        <children><child nodeId="node-1106"></child>
         </children>
     </item>
-    <item nodeId="node-1085">
+    <item nodeId="node-1106">
         <command xml:space="preserve">tkae gloves</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1086"></child>
+        <children><child nodeId="node-1107"></child>
         </children>
     </item>
-    <item nodeId="node-1086">
+    <item nodeId="node-1107">
         <command xml:space="preserve">take gloves</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1087"></child>
+        <children><child nodeId="node-1108"></child>
         </children>
     </item>
-    <item nodeId="node-1087">
+    <item nodeId="node-1108">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Jungle
@@ -1168,10 +1721,10 @@ You can see Purple Flower here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1088"></child>
+        <children><child nodeId="node-1109"></child>
         </children>
     </item>
-    <item nodeId="node-1088">
+    <item nodeId="node-1109">
         <command xml:space="preserve">take flower</command>
         <result xml:space="preserve">You died from touching a poisonous flower!
 
@@ -1185,229 +1738,13 @@ You can see Purple Flower here.
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1089"></child>
-        </children>
-    </item>
-    <item nodeId="node-1089">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Jungle
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1090"></child>
-        </children>
-    </item>
-    <item nodeId="node-1090">
-        <command xml:space="preserve">put on gloves</command>
-        <result xml:space="preserve">You put on Gloves.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1091"></child>
-        </children>
-    </item>
-    <item nodeId="node-1091">
-        <command xml:space="preserve">take flower</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1092">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. You can make out paths to the east and north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1093"></child>
-        </children>
-    </item>
-    <item nodeId="node-1093">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. You can make out paths to the west and north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1094"></child>
-        </children>
-    </item>
-    <item nodeId="node-1094">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1095"></child>
-        </children>
-    </item>
-    <item nodeId="node-1095">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
-        </children>
-    </item>
-    <item nodeId="node-1096">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Temple entrance
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1097"></child>
-        </children>
-    </item>
-    <item nodeId="node-1097">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1098"></child>
-        </children>
-    </item>
-    <item nodeId="node-1098">
-        <command xml:space="preserve">se</command>
-        <result xml:space="preserve">
-Hallway
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1099"></child>
-        </children>
-    </item>
-    <item nodeId="node-1099">
-        <command xml:space="preserve">sw</command>
-        <result xml:space="preserve">
-Treasure Vault
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1100"></child>
-        </children>
-    </item>
-    <item nodeId="node-1100">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-secret exit
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1101"></child>
-        </children>
-    </item>
-    <item nodeId="node-1101">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. You can make out paths to the west and north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1102"></child>
-        </children>
-    </item>
-    <item nodeId="node-1102">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1103"></child>
-        </children>
-    </item>
-    <item nodeId="node-1103">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1104"></child>
-        </children>
-    </item>
-    <item nodeId="node-1104">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1105"></child>
-        </children>
-    </item>
-    <item nodeId="node-1105">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Dock
-Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
-
-You can see a backpack (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1106"></child>
-        </children>
-    </item>
-    <item nodeId="node-1106">
-        <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open the backpack, revealing Gloves and Machete.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1107"></child>
-        </children>
-    </item>
-    <item nodeId="node-1107">
-        <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">backpack: Taken.
-Gloves: Taken.
-Machete: Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1108"></child>
-        </children>
-    </item>
-    <item nodeId="node-1108">
-        <command xml:space="preserve">put on gloves</command>
-        <result xml:space="preserve">You put on Gloves.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1109">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
-
-You can see Tribesman here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1115"></child>
-            <child nodeId="node-1110"></child>
+        <children><child nodeId="node-1110"></child>
         </children>
     </item>
     <item nodeId="node-1110">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. You can make out paths to the west and north.
-
-You can see Purple Flower here.
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Jungle
+[Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1415,8 +1752,8 @@ You can see Purple Flower here.
         </children>
     </item>
     <item nodeId="node-1111">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
+        <command xml:space="preserve">put on gloves</command>
+        <result xml:space="preserve">You put on Gloves.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1424,22 +1761,17 @@ You can see Purple Flower here.
         </children>
     </item>
     <item nodeId="node-1112">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. You can make out paths to the west and north.
-
-You can see Purple Flower here.
+        <command xml:space="preserve">take flower</command>
+        <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1113"></child>
-        </children>
     </item>
     <item nodeId="node-1113">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
-Secret Exit
+Jungle
+All around you is the Jungle. You can make out paths to the east and north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1447,32 +1779,30 @@ Secret Exit
         </children>
     </item>
     <item nodeId="node-1114">
-        <command xml:space="preserve">n</command>
+        <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Jungle
 All around you is the Jungle. You can make out paths to the west and north.
 
-You can see Purple Flower here.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1115"></child>
+        </children>
     </item>
     <item nodeId="node-1115">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your helath is 100
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1129"></child>
-            <child nodeId="node-1116"></child>
+        <children><child nodeId="node-1116"></child>
         </children>
     </item>
     <item nodeId="node-1116">
-        <command xml:space="preserve">w</command>
+        <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Jungle
-All around you is the Jungle. To your east You can make out paths to the west and south.
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1490,10 +1820,8 @@ Temple entrance
         </children>
     </item>
     <item nodeId="node-1118">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To your east You can make out paths to the west and south.
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1501,9 +1829,9 @@ All around you is the Jungle. To your east You can make out paths to the west an
         </children>
     </item>
     <item nodeId="node-1119">
-        <command xml:space="preserve">e</command>
+        <command xml:space="preserve">se</command>
         <result xml:space="preserve">
-Temple entrance
+Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1512,7 +1840,8 @@ Temple entrance
     </item>
     <item nodeId="node-1120">
         <command xml:space="preserve">sw</command>
-        <result xml:space="preserve">You can't go that way.
+        <result xml:space="preserve">
+Treasure Vault
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1520,9 +1849,9 @@ Temple entrance
         </children>
     </item>
     <item nodeId="node-1121">
-        <command xml:space="preserve">se</command>
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Hallway
+secret exit
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1530,9 +1859,10 @@ Hallway
         </children>
     </item>
     <item nodeId="node-1122">
-        <command xml:space="preserve">nw</command>
+        <command xml:space="preserve">n</command>
         <result xml:space="preserve">
-Temple entrance
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1540,10 +1870,8 @@ Temple entrance
         </children>
     </item>
     <item nodeId="node-1123">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Jungle
-All around you is the Jungle. To your east You can make out paths to the west and south.
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1551,9 +1879,10 @@ All around you is the Jungle. To your east You can make out paths to the west an
         </children>
     </item>
     <item nodeId="node-1124">
-        <command xml:space="preserve">e</command>
+        <command xml:space="preserve">n</command>
         <result xml:space="preserve">
-Temple entrance
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1561,9 +1890,10 @@ Temple entrance
         </children>
     </item>
     <item nodeId="node-1125">
-        <command xml:space="preserve">se</command>
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Hallway
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1571,9 +1901,12 @@ Hallway
         </children>
     </item>
     <item nodeId="node-1126">
-        <command xml:space="preserve">sw</command>
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Treasure Vault
+Dock
+Behind you is the boat that you came here on and the rest of its crew. To the east is Jungle.
+
+You can see a backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1581,9 +1914,8 @@ Treasure Vault
         </children>
     </item>
     <item nodeId="node-1127">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Secret Exit
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open the backpack, revealing Gloves and Machete.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1591,6 +1923,515 @@ Secret Exit
         </children>
     </item>
     <item nodeId="node-1128">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">backpack: Taken.
+Gloves: Taken.
+Machete: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1129"></child>
+        </children>
+    </item>
+    <item nodeId="node-1129">
+        <command xml:space="preserve">put on gloves</command>
+        <result xml:space="preserve">You put on Gloves.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1483">
+        <command xml:space="preserve">hehe</command>
+        <result xml:space="preserve">Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1484"></child>
+        </children>
+    </item>
+    <item nodeId="node-1484">
+        <command xml:space="preserve">press pork</command>
+        <result xml:space="preserve">The pork button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1485"></child>
+        </children>
+    </item>
+    <item nodeId="node-1485">
+        <command xml:space="preserve">press wind</command>
+        <result xml:space="preserve">The wind button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1486"></child>
+        </children>
+    </item>
+    <item nodeId="node-1486">
+        <command xml:space="preserve">press storm</command>
+        <result xml:space="preserve">The storm button is pressed down and remains in that position after you lift your hand off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1487"></child>
+        </children>
+    </item>
+    <item nodeId="node-1487">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1488"></child>
+        </children>
+    </item>
+    <item nodeId="node-1488">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1489"></child>
+        </children>
+    </item>
+    <item nodeId="node-1489">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1130">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a man wearing a mask,he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1136"></child>
+            <child nodeId="node-1131"></child>
+        </children>
+    </item>
+    <item nodeId="node-1131">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1132"></child>
+        </children>
+    </item>
+    <item nodeId="node-1132">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+            <child nodeId="node-1133"></child>
+            <child nodeId="node-1426"></child>
+        </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1427"></child>
+        </children>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">hehe</command>
+        <result xml:space="preserve">Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1431"></child>
+        </children>
+    </item>
+    <item nodeId="node-1431">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1432"></child>
+        </children>
+    </item>
+    <item nodeId="node-1432">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+secret exit
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1433"></child>
+        </children>
+    </item>
+    <item nodeId="node-1433">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1434"></child>
+        </children>
+    </item>
+    <item nodeId="node-1434">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1435"></child>
+        </children>
+    </item>
+    <item nodeId="node-1435">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1436"></child>
+        </children>
+    </item>
+    <item nodeId="node-1436">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1437"></child>
+        </children>
+    </item>
+    <item nodeId="node-1437">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1438"></child>
+        </children>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1439"></child>
+        </children>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+You can't go that way.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "an every turn rule" applies.]
+[Rule "an every turn rule" applies.]
+[Rule "An every turn rule" applies.]
+[Rule "An every turn rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1133">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1134"></child>
+        </children>
+    </item>
+    <item nodeId="node-1134">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Secret Exit
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1135"></child>
+        </children>
+    </item>
+    <item nodeId="node-1135">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">hehe</command>
+        <result xml:space="preserve">Temple entrance
+As you enter the temple the door slams down behind you trapping you in a block of rock. A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">haha</command>
+        <result xml:space="preserve">Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+You can see Gold Totem here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+secret exit
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. You can make out paths to the west and north.
+
+You can see Purple Flower here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+        </children>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">hehe</command>
+        <result xml:space="preserve">Temple entrance
+ A little light coming in from holes in the roof allows you to make out buttons and a painting on one of the walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1136">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Tribesman blocks your way into the Temple, as you try to move past he pushes you roughly away from the entrance. Your health has been decreased by 10. Your helath is 100
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1150"></child>
+            <child nodeId="node-1137"></child>
+        </children>
+    </item>
+    <item nodeId="node-1137">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To your east You can make out paths to the west and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1138"></child>
+        </children>
+    </item>
+    <item nodeId="node-1138">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Temple entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1139"></child>
+        </children>
+    </item>
+    <item nodeId="node-1139">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To your east You can make out paths to the west and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1140"></child>
+        </children>
+    </item>
+    <item nodeId="node-1140">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Temple entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1141"></child>
+        </children>
+    </item>
+    <item nodeId="node-1141">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1143"></child>
+        </children>
+    </item>
+    <item nodeId="node-1143">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Temple entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To your east You can make out paths to the west and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Temple entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Treasure Vault
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1148"></child>
+        </children>
+    </item>
+    <item nodeId="node-1148">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Secret Exit
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1149"></child>
+        </children>
+    </item>
+    <item nodeId="node-1149">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Jungle
@@ -1599,7 +2440,7 @@ All around you is the Jungle. You can make out paths to the west and north.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1129">
+    <item nodeId="node-1150">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You don't seem to have anything at the moment.
 (Health: 90)
