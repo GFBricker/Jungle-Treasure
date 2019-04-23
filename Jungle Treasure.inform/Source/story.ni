@@ -101,7 +101,7 @@ instead of combining Dart with Purple Flower:
 		decrease dart-count by 1;
 		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
 	otherwise:
-		say "You don[apostophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
+		say "You don[apostrophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
 
 instead of combining Purple flower with dart:
 	if dart-count is greater than 0:
@@ -110,7 +110,7 @@ instead of combining Purple flower with dart:
 		decrease dart-count by 1;
 		say "you coat the dart in the toxins of the flower and create a poisonous dart.";
 	otherwise:
-		say "You don[apostophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
+		say "You don[apostrophe]t have any darts to make poisonous, you might want to get them out of your backpack or restart."
 		
 Tribesman is a person. Tribesman is in Jungle 2. Present health of Tribesman is 100. The description is "A very large intimidating local man with a spear and many tribal tattoos covering his body."
 
@@ -186,6 +186,11 @@ killing is an action applying to one thing.
 understand the command "kill" as something new.
 understand "kill [things]" as killing.
 
+An every turn rule:
+	if player is dead:
+		say "You have died";
+		End the story.
+
 check throwing something at a second noun
 (this is the can't throw what you don't have rule):
 if the noun is not carried by the player,
@@ -229,7 +234,7 @@ instead of attacking Tribesman with machete:
 		If the player is in jungle 2:
 			decrease present health of the tribesman by 20;
 			decrease present health of the player by 40;
-			say "By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is [the present health of the Tribesman].[line break]
+			say "By hitting the tribesman with machete you have angered him greatly your blow lands dealing 20 damage. The Tribesman's current health is [the present health of the Tribesman].[line break]
 			He swings back at you with his spear and deals 40 damage. Your current health is [the present health of the player].[line break]";
 		Otherwise:
 			say "You try to attack the tribesman with the machete but he is nowhere to be seen";

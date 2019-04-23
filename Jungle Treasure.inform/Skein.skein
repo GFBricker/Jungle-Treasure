@@ -7,7 +7,7 @@
         <result xml:space="preserve">
 
 
-You have sailed from England around Cape Horn to the deep Peruvian jungle in search of ancient Incan Treasure. Your local guide points you towards an area of dense trees and tells you "The treasure can be found in a hidden temple deep in the rainforest." He can not lead you to it since the tribesman will attack anyone who comes close to the temple containing the treasure. You should start looking for it now so you can return before it is dark.
+You have sailed from England around Cape Horn to the deep Peruvian jungle in search of ancient Incan Treasure. Your local guide points you towards an area of dense trees and tells you "The treasure can be found in a hidden temple deep in the rainforest." He cannot lead you to it since the tribesman will attack anyone who comes close to the temple containing the treasure. You should start looking for it now so you can return before it is dark.
 
 Jungle Treasure
 An Interactive Fiction by gbricker19
@@ -450,12 +450,13 @@ Dropped.
     </item>
     <item nodeId="node-1023">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete, Dart x 5 and sandbag.
+        <result xml:space="preserve">You open the backpack, revealing Gloves, Machete, Dart x 5 and Sandbag(empty).
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1030"></child>
             <child nodeId="node-1024"></child>
+            <child nodeId="node-1523"></child>
             <child nodeId="node-1508"></child>
         </children>
     </item>
@@ -577,6 +578,162 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 secret exit
 A room overhanging the jungle outside the temple, once you exit the temple you will not be able to return. Make sure you have everything you could want beore leaving.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1523">
+        <command xml:space="preserve">take machete</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1524"></child>
+        </children>
+    </item>
+    <item nodeId="node-1524">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the west is the dock. You can make out paths to the east and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1525"></child>
+        </children>
+    </item>
+    <item nodeId="node-1525">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Jungle
+All around you is the Jungle. To the east there appears to be a stone structure but in front of it is a large tribesman, he does not look too friendly. You can make out paths to the west and south.
+
+You can see Tribesman here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1526"></child>
+            <child nodeId="node-1538"></child>
+        </children>
+    </item>
+    <item nodeId="node-1538">
+        <command xml:space="preserve">attack tibesman with machete</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1539"></child>
+        </children>
+    </item>
+    <item nodeId="node-1539">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 20 damage. The Tribesman's current health is 80.
+ He swings back at you with his spear and deals 40 damage. Your current health is 60.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1540"></child>
+        </children>
+    </item>
+    <item nodeId="node-1540">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 20 damage. The Tribesman's current health is 60.
+ He swings back at you with his spear and deals 40 damage. Your current health is 20.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1541"></child>
+        </children>
+    </item>
+    <item nodeId="node-1541">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 20 damage. The Tribesman's current health is 40.
+ He swings back at you with his spear and deals 40 damage. Your current health is -20.
+
+You have died
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1526">
+        <command xml:space="preserve">attac tribesman</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1527"></child>
+        </children>
+    </item>
+    <item nodeId="node-1527">
+        <command xml:space="preserve">attack tribesman</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1528"></child>
+        </children>
+    </item>
+    <item nodeId="node-1528">
+        <command xml:space="preserve">attack tibesman with machete</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1529"></child>
+        </children>
+    </item>
+    <item nodeId="node-1529">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is 80.
+ He swings back at you with his spear and deals 40 damage. Your current health is 60.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1530"></child>
+        </children>
+    </item>
+    <item nodeId="node-1530">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is 60.
+ He swings back at you with his spear and deals 40 damage. Your current health is 20.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1531"></child>
+        </children>
+    </item>
+    <item nodeId="node-1531">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is 40.
+ He swings back at you with his spear and deals 40 damage. Your current health is -20.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1532"></child>
+        </children>
+    </item>
+    <item nodeId="node-1532">
+        <command xml:space="preserve">attack tribesman with machete</command>
+        <result xml:space="preserve">By hitting the tribesman with machete you have angered him greatly your blow lands dealing 30 damage. The Tribesman's current health is 20.
+ He swings back at you with his spear and deals 40 damage. Your current health is -60.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1533"></child>
+        </children>
+    </item>
+    <item nodeId="node-1533">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying: 
+Machete
+(Health: -60)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
